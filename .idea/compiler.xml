@@ -7,17 +7,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="ms-discovery-service" />
         <module name="ms-customer-service" />
-        <module name="ms-dicovery-service" />
         <module name="ms-account-service" />
+        <module name="ms-gateway-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ms-dicovery-service" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ms-account-service" options="-parameters" />
       <module name="ms-customer-service" options="-parameters" />
       <module name="ms-dicovery-service" options="-parameters" />
+      <module name="ms-discovery-service" options="-parameters" />
+      <module name="ms-gateway-service" options="-parameters" />
     </option>
   </component>
 </project>
